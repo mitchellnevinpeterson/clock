@@ -1,0 +1,55 @@
+/*adding a background to the body*/
+body {
+	background-color: #000;
+	background-image: url("../img/hourGlass.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*changing the font size, color, etc.*/
+div {
+	color: #fff;
+	font-size: 45px;
+	margin: 30% 10%;
+	height: inherit;
+}
+/*changing the font of the time*/
+#time {
+	font-family: 'Orbitron', sans-serif;
+	min-width: 365px;
+}
+/*changing the font of the date*/
+#date {
+	font-family: 'Rock Salt', cursive;
+}
+/*media queires to make the page responsive*/
+@media(max-width: 1281px) {
+	#date {
+		float: left!important;
+		display: block!important;
+		margin-top: 0;
+		margin-bottom: 45%;
+		margin-top: 2%;
+	}
+	#time {
+		margin-top: 45%;
+		margin-bottom: 0;
+		display: block!important;
+		padding-left: 10px;
+	}
+}
+@media(max-width: 910px) {
+	div {
+		margin-left: 5%;
+		font-size: 38px;
+	}
+}
+@media(max-width: 600px) {
+	div {
+		font-size: 30px;
+	}
+}
+@media(max-width: 440px) {
+	div {
+		font-size: 25px;
+	}
+}
